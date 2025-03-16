@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>USC Room Listings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="hdr border-bottom border-warning border-5 navbar navbar-expand-lg bg-white fw-bold fixed-top">
+    <div class="container">
+        <a class="navbar-brand fs-1 fw-medium" href="#">USC Booker</a>
+
+        <!-- Toggle button for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center fs-5" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="roomlistings.html">Room Listings</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Booking</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us!</a></li>
+            </ul>
+            <a class="btn btn-success fw-bold d-lg-none mt-2" href="#">Signup</a>
+        </div>
+
+        <a class="btn btn-success fw-bold d-none d-lg-block" href="#">Signup</a>
+    </div>
+</nav>
+
+<!-- Carousel with Crossfade Effect -->
+<div id="carouselExampleFade" class="karosel carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="assets/images/1.jpg" class="d-block w-100" alt="First Slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="assets/images/USC-SAFAD.jpg" class="d-block w-100" alt="Second Slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="assets/images/USC-SHCP-01.jpg" class="d-block w-100" alt="Third Slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation buttons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="search-section">
+
+    <input class="search-input" type="search" placeholder="Search Something idk...">
+    <i class="bi bi-search search-icon"></i>
+
+<!-- Bootstrap Icons (Required for the search icon) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+</div>
+
+<div class="container camp-cont">
+  <h4 class="fw-bold mt-4">Browse by Campus</h4>
+  <div class="row text-center justify-content-center"> <!-- Ensures proper alignment -->
+      <div class="col-md-3 col-6 campus-container"> 
+          <div class="campus-box">
+              <img src="assets/images/usc-placeholder.png" alt="Talamban Campus">
+          </div>
+          <div class="campus-text">Talamban Campus</div>
+      </div>
+      <div class="col-md-3 col-6 campus-container">
+          <div class="campus-box">
+              <img src="assets/images/usc-placeholder.png" alt="Downtown Campus">
+          </div>
+          <div class="campus-text">Downtown Campus</div>
+      </div>
+      <div class="col-md-3 col-6 campus-container">
+          <div class="campus-box">
+              <img src="assets/images/usc-placeholder.png" alt="North Campus">
+          </div>
+          <div class="campus-text">North Campus</div>
+      </div>
+      <div class="col-md-3 col-6 campus-container">
+          <div class="campus-box">
+              <img src="assets/images/usc-placeholder.png" alt="South Campus">
+          </div>
+          <div class="campus-text">South Campus</div>
+      </div>
+  </div>
+</div>
+
+<div class="container mt-4 roomlist-cont">
+  <h4 class="fw-bold">Currently Available Rooms</h4>
+  <div class="row">
+      <div class="col-md-6">
+          <ul class="room-list">
+              <li>Room 101</li>
+              <li>Room 102</li>
+              <li>Room 103</li>
+              <li>Room 104</li>
+              <li>Room 105</li>
+              <li>Room 106</li>
+              <li>Room 107</li>
+              <li>Room 108</li>
+              <li>Room 109</li>
+              <li>Room 110</li>
+              <li>Room 111</li>
+              <li>Room 112</li>
+          </ul>
+      </div>
+      <div class="col-md-6">
+          <div class="room-image">
+              <img src="assets/images/usc-placeholder.png" alt="Room Image">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="features-section">
+    <div class="container">
+        <h2 class="section-title">Why use USC Booker?</h2>
+        <p class="text-center text-secondary">Find out why to use this booking website</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fa-solid fa-address-card feature-icon"></i> <!-- User Card Icon -->
+                    <h5 class="fw-bold">Medium length headline</h5>
+                    <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fa-solid fa-thumbs-up feature-icon"></i> <!-- Thumbs Up Icon -->
+                    <h5 class="fw-bold">Medium length headline</h5>
+                    <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fa-solid fa-face-smile feature-icon"></i> <!-- Smile Icon -->
+                    <h5 class="fw-bold">Medium length headline</h5>
+                    <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="bg-success text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h2 class="h5 fw-bold">Contact Information</h2>
+          <p>USC Booker</p>
+          <p>Email: <a href="mailto:info@uscbooker.com" class="text-white">info@uscbooker.com</a></p>
+          <p>Phone: <a href="tel:+63324012300" class="text-white">+63 32 401 2300</a></p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h2 class="h5 fw-bold">Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">About</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Booking</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Room Listings</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 text-center mb-4">
+          <h2 class="h5 fw-bold">Follow Us</h2>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="btn btn-light rounded-circle p-2">
+              <i class="bi bi-facebook text-success"></i>
+            </a>
+            <a href="#" class="btn btn-light rounded-circle p-2">
+              <i class="bi bi-instagram text-success"></i>
+            </a>
+            <a href="#" class="btn btn-light rounded-circle p-2">
+              <i class="bi bi-twitter text-success"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 small">
+        &copy; 2025 USC Booker. All rights reserved. | <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Search Form
+<form class="d-flex ms-3" role="search">
+  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-dark" type="submit">Search</button>
+</form> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
