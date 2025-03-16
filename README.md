@@ -1,2 +1,2 @@
-# USC-Booker
-USC room booker for north, south and main campus
+Arnoco, Dalocanog, Sereno
+USC Booker
